@@ -1,0 +1,48 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "hono-cfworker",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-03-26",
+
+  "compatibility_flags": ["nodejs_compat"],
+  // "vars": {
+  //   "MY_VAR": "my-variable"
+  // },
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "d55e707e98874364a41b8edec03c53ca",
+    },
+  ],
+  "r2_buckets": [
+    {
+      "binding": "MY_BUCKET",
+      "bucket_name": "apbatechpresence",
+    },
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "apbatechpresence",
+      "database_id": "d5757f18-448e-414d-9a8c-a1081291c467",
+      // "remote": true,
+    },
+  ],
+  // "triggers": {
+  //   "crons": ["0 16 * * *"],
+  // },
+  // "ai": {
+  //   "binding": "AI"
+  // },
+  // "observability": {
+  //   "enabled": true,
+  //   "head_sampling_rate": 1
+  // }
+
+  "vars": {
+    "R2_PUBLIC_URL": "cdn.presensi-apbatech.my.id",
+    "R2_CUSTOM_DOMAIN": "cdn.presensi-apbatech.my.id",
+    "FIREBASE_PROJECT_ID": "presenceapp-85ceb",
+    "FIREBASE_CLIENT_EMAIL": "firebase-adminsdk-fbsvc@presenceapp-85ceb.iam.gserviceaccount.com",
+  },
+}
