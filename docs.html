@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attendance Management System API Documentation</title>
+    <style>
+      body {
+        margin: 0;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <!-- Scalar JS - Gunakan CDN yang benar -->
+    <script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference@latest/dist/browser/standalone.js"></script>
+
+    <script>
+      // Inisialisasi Scalar
+      ScalarApiReference(
+        {
+          spec: {
+            url: "/openapi.yaml",
+          },
+          theme: "purple",
+          layout: "modern",
+          darkMode: true,
+          hideDownloadButton: false,
+          hideTestRequestButton: false,
+        },
+        document.getElementById("app"),
+      );
+    </script>
+  </body>
+</html>
