@@ -43,6 +43,5 @@
     "R2_PUBLIC_URL": "cdn.presensi-apbatech.my.id",
     "R2_CUSTOM_DOMAIN": "cdn.presensi-apbatech.my.id",
     "FIREBASE_PROJECT_ID": "presenceapp-85ceb",
-    "FIREBASE_CLIENT_EMAIL": "firebase-adminsdk-fbsvc@presenceapp-85ceb.iam.gserviceaccount.com",
   },
 }
